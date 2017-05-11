@@ -1,0 +1,9 @@
+'Malyshev.Site:Videos':
+  superTypes:
+    'Neos.Neos:Document': true
+    'Malyshev.Site:SectionMixin': true
+  childNodes:
+    videos:
+      type: 'Neos.Neos:ContentCollection'
+  ui:
+    label: 'Videos'

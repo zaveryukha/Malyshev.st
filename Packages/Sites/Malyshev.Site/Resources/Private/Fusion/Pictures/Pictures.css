@@ -1,4 +1,3 @@
-
 #pictures {
   background: url(../img/back_images.jpg) #231f20 no-repeat center center fixed;
   min-height: 100px;
@@ -6,4 +5,16 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.fa-camera-retro {
+  color: #4ec3cd;
+  font-size: 22px;
+  display: block;
+  padding-top: 15px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #4ec3cd;
+  border-radius: 30px;
+  margin: auto;
 }

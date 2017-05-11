@@ -1,0 +1,22 @@
+prototype(Malyshev.Site:Picture) {
+    title = Neos.Fusion:Tag {
+        tagName = 'span'
+        content = ${q(node).property('title')}
+        @process.contentElementEditable = ContentElementEditable {
+            property = 'title'
+        }
+    }
+    subTitle = Neos.Fusion:Tag {
+        tagName = 'span'
+        content = ${q(node).property('subTitle')}
+        @process.contentElementEditable = ContentElementEditable {
+            property = 'subTitle'
+        }
+    }
+    imageUri = ImageUri {
+        asset = ${q(node).property('image')}
+    }
+    features = ContentCollection {
+        nodePath = 'pictures'
+    }
+}

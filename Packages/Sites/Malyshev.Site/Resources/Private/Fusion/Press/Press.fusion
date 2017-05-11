@@ -1,0 +1,6 @@
+prototype(Malyshev.Site:Press.Document) < prototype(Malyshev.Site:AbstractPage)
+prototype(Malyshev.Site:Press) {
+    pressLinks = ContentCollection {
+        nodePath = 'pressLinks'
+    }
+}

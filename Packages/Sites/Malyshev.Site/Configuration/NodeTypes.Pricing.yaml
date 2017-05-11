@@ -1,0 +1,9 @@
+'Malyshev.Site:Pricing':
+  superTypes:
+    'Neos.Neos:Document': true
+    'Malyshev.Site:SectionMixin': true
+  childNodes:
+    pricing:
+      type: 'Neos.Neos:ContentCollection'
+  ui:
+    label: 'Pricing'

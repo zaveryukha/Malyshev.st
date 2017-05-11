@@ -1,0 +1,21 @@
+prototype(Malyshev.Site:Pictures.Document) < prototype(Malyshev.Site:AbstractPage)
+prototype(Malyshev.Site:Pictures) {
+    @process.anchor = Malyshev.Site:Anchor
+    title = Neos.Fusion:Tag {
+        tagName = 'span'
+        content = ${q(node).property('title')}
+        @process.contentElementEditable = ContentElementEditable {
+            property = 'title'
+        }
+    }
+    subTitle = Neos.Fusion:Tag {
+        tagName = 'span'
+        content = ${q(node).property('subTitle')}
+        @process.contentElementEditable = ContentElementEditable {
+            property = 'subTitle'
+        }
+    }
+    features = ContentCollection {
+        nodePath = 'pictures'
+    }
+}

@@ -1,0 +1,28 @@
+'Malyshev.Site:Picture':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: 'Picture'
+    inlineEditable: true
+    inspector:
+      groups:
+        image:
+          label: Image
+  properties:
+    title:
+      type: string
+      ui:
+        aloha:
+          placeholder: 'Title'
+    subTitle:
+      type: string
+      ui:
+        aloha:
+          placeholder: 'Subtitle'
+    image:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: Image
+        reloadIfChanged: true
+        inspector:
+          group: image

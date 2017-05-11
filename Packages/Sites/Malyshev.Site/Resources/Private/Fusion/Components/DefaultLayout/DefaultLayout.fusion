@@ -1,0 +1,4 @@
+prototype(Malyshev.Site:Components.DefaultLayout) < prototype(Malyshev.Site:SimpleTemplate) {
+    main = ${value}
+    footer = Malyshev.Site:Components.Footer
+}

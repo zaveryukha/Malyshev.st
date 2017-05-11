@@ -1,0 +1,6 @@
+'Malyshev.Site:Biography':
+  superTypes:
+    'Neos.Neos:Document': true
+    'Malyshev.Site:SectionMixin': true
+  ui:
+    label: 'Biography'

@@ -1,0 +1,7 @@
+prototype(Malyshev.Site:Anchor) < prototype(Neos.Fusion:Array) {
+    anchor = Neos.Fusion:Tag {
+        tagName = 'a'
+        attributes.id = ${node.name}
+    }
+    value = ${value}
+}

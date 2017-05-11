@@ -1,0 +1,4 @@
+prototype(Neos.Neos:Document) < prototype(Malyshev.Site:SimpleTemplate) {
+    @process.contentElementWrapping = ContentElementWrapping
+}
+prototype(Neos.Neos:Content) < prototype(Malyshev.Site:SimpleTemplate)

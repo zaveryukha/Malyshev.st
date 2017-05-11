@@ -1,0 +1,7 @@
+prototype(Malyshev.Site:Root.Document) < prototype(Malyshev.Site:AbstractPage)
+prototype(Malyshev.Site:Root) < prototype(Neos.Fusion:Collection) {
+    @process.layout = Malyshev.Site:Components.DefaultLayout
+    collection = ${q(node).children('[instanceof Neos.Neos:Document]').get()}
+    itemName = 'node'
+    itemRenderer = ContentCase
+}

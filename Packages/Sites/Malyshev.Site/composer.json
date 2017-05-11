@@ -1,0 +1,13 @@
+{
+    "name": "Malyshev/Site",
+    "type": "neos-site",
+    "description": "Website package. See distribution for more info.",
+    "require": {
+        "neos/neos": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Malyshev\\Site\\": "Classes"
+        }
+    }
+}

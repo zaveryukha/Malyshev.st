@@ -1,0 +1,8 @@
+'Malyshev.Site:Press':
+  superTypes:
+    'Neos.Neos:Document': true
+  ui:
+    label: 'Press'
+  childNodes:
+    pressLinks:
+      type: 'Neos.Neos:ContentCollection'

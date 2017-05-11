@@ -1,0 +1,24 @@
+prototype(Malyshev.Site:Features.Document) < prototype(Malyshev.Site:AbstractPage)
+prototype(Malyshev.Site:Features) {
+    @process.anchor = Malyshev.Site:Anchor
+    title = Neos.Fusion:Tag {
+        tagName = 'span'
+        content = ${q(node).property('title')}
+        @process.contentElementEditable = ContentElementEditable {
+            property = 'title'
+        }
+    }
+    subTitle = Neos.Fusion:Tag {
+        tagName = 'span'
+        content = ${q(node).property('subTitle')}
+        @process.contentElementEditable = ContentElementEditable {
+            property = 'subTitle'
+        }
+    }
+    imageUri = ImageUri {
+        asset = ${q(node).property('image')}
+    }
+    features = ContentCollection {
+        nodePath = 'features'
+    }
+}

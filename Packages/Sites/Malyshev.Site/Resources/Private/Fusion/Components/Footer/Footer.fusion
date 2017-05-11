@@ -1,0 +1,3 @@
+prototype(Malyshev.Site:Components.Footer) < prototype(Malyshev.Site:SimpleTemplate) {
+    year = ${Date.year(Date.now())}
+}

@@ -1,0 +1,9 @@
+
+#pictures {
+  background: url(../img/back_images.jpg) #231f20 no-repeat center center fixed;
+  min-height: 100px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

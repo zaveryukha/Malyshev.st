@@ -1,0 +1,8 @@
+'Neos.Neos:Content':
+  options:
+    fusion:
+      prototypeGenerator: Malyshev\Site\Generators\DefaultContentPrototypeGenerator
+'Neos.Neos:Document':
+  options:
+    fusion:
+      prototypeGenerator: Malyshev\Site\Generators\DefaultDocumentPrototypeGenerator

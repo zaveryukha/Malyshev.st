@@ -1,0 +1,9 @@
+'Malyshev.Site:Pictures':
+  superTypes:
+    'Neos.Neos:Document': true
+    'Malyshev.Site:SectionMixin': true
+  childNodes:
+    pictures:
+      type: 'Neos.Neos:ContentCollection'
+  ui:
+    label: 'Pictures'

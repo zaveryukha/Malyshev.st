@@ -1,0 +1,10 @@
+prototype(Malyshev.Site:Components.SectionMenu) < prototype(Neos.Fusion:Collection) {
+    collection = ${q(site).children('[instanceof Malyshev.Site:SectionMixin]').get()}
+    itemName = 'section'
+    itemRenderer = Neos.Fusion:Tag {
+        tagName = 'a'
+        attributes.class = 'scroll'
+        attributes.href = ${'#' + section.name}
+        content = ${section.properties.navTitle + '&nbsp;&nbsp;'}
+    }
+}

@@ -1,0 +1,21 @@
+'Malyshev.Site:Features':
+  superTypes:
+    'Neos.Neos:Document': true
+    'Malyshev.Site:SectionMixin': true
+  childNodes:
+    features:
+      type: 'Neos.Neos:ContentCollection'
+  ui:
+    label: 'Features'
+    inspector:
+      groups:
+        image:
+          label: Image
+  properties:
+    image:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: Image
+        reloadIfChanged: true
+        inspector:
+          group: image

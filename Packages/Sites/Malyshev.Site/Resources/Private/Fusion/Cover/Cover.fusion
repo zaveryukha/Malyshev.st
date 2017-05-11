@@ -1,0 +1,21 @@
+prototype(Malyshev.Site:Cover.Document) < prototype(Malyshev.Site:AbstractPage)
+prototype(Malyshev.Site:Cover) {
+    sectionMenu = Malyshev.Site:Components.SectionMenu
+    title = Neos.Fusion:Tag {
+        tagName = 'span'
+        content = ${q(node).property('title')}
+        @process.contentElementEditable = ContentElementEditable {
+            property = 'title'
+        }
+    }
+    subTitle = Neos.Fusion:Tag {
+        tagName = 'span'
+        content = ${q(node).property('subTitle')}
+        @process.contentElementEditable = ContentElementEditable {
+            property = 'subTitle'
+        }
+    }
+    backgroundImageUri = ImageUri {
+        asset = ${q(node).property('backgroundImage')}
+    }
+}

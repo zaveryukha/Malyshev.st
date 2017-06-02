@@ -1,4 +1,4 @@
-<section id="pictures" class="pad-xl">
+<section id="pictures" class="pad-sm">
   <div class="container">
     <div class="row">
         <div class="col-sm-8 col-sm-offset-2 text-center margin-30 wow fadeIn" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;">
@@ -12,7 +12,10 @@
 <section id="main-info" class="pad-xl">
     <div class="container">
 	    <div class="row">
-            {features -> f:format.raw()}
-        </div>
+        <ul class="cross">
+            {pictures -> f:format.raw()}
+            <li class="helper"> i i i i i i i i i i i i i </li>
+        </ul>
+      </div>
     </div>
 </section>

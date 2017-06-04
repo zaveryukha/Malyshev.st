@@ -1,6 +1,12 @@
 Neos:
+  Flow:
+    session:
+      inactivityTimeout: 604800
+    i18n:
+      defaultLocale: ru
   Neos:
     userInterface:
+      defaultLanguage: ru
       navigateComponent:
         nodeTree:
           loadingDepth: 1
@@ -9,3 +15,21 @@ Neos:
     fusion:
       autoInclude:
         Malyshev.Site: true
+  ContentRepository:
+    contentDimensions:
+      language:
+        default: ru
+        defaultPreset: ru
+        label: Language
+        icon: icon-language
+        presets:
+          ru:
+            label: Russian
+            values:
+              - ru
+            uriSegment: ''
+          en:
+            label: English
+            values:
+              - en
+            uriSegment: en

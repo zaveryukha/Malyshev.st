@@ -72,7 +72,7 @@ li.helper {
 
 }
 
-ul.cross > div.neos-contentcollection > li > img{
+ul.cross > div.neos-contentcollection > li > a > img{
   margin-top: 10px;
   max-width: 320px;
   max-height: 240px;

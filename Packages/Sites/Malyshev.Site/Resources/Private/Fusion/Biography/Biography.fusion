@@ -1,5 +1,6 @@
 prototype(Malyshev.Site:Biography.Document) < prototype(Malyshev.Site:AbstractPage)
 prototype(Malyshev.Site:Biography) {
+    @process.anchor = Malyshev.Site:Anchor
     title = Neos.Fusion:Tag {
         tagName = 'span'
         content = ${q(node).property('title')}

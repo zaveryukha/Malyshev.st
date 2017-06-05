@@ -1,6 +1,0 @@
-'Malyshev.Site:Invite':
-  superTypes:
-    'Neos.Neos:Document': true
-    'Malyshev.Site:SectionMixin': true
-  ui:
-    label: 'Invite'

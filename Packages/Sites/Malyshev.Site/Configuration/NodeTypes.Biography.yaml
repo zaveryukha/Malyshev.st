@@ -4,3 +4,4 @@
     'Malyshev.Site:SectionMixin': true
   ui:
     label: 'Biography'
+    icon: 'icon-user'

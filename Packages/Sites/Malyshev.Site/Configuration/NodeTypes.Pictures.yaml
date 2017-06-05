@@ -7,3 +7,4 @@
       type: 'Neos.Neos:ContentCollection'
   ui:
     label: 'Pictures'
+    icon: 'icon-photo'

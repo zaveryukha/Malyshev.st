@@ -1,5 +1,9 @@
-<li>
+<div class="responsive">
+  <div class="gallery">
     <iframe src="https://www.youtube.com/embed/{video}?wmode=transparent" {f:if(condition: width, then: ' width="{width}"')}{f:if(condition: height, then: ' height="{height}"')}frameborder="0" allowfullscreen></iframe>
-    <h3>{title -> f:format.raw()}</h3>
-    <p>{subTitle -> f:format.raw()}</p>
-</li>
+    <div class="desc">
+      <h3>{title -> f:format.raw()}</h3>
+      <p>{subTitle -> f:format.raw()}</p>
+    </div>
+  </div>
+</div>

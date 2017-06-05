@@ -43,7 +43,7 @@
             the video id is `G6D1YI-41ao`.
     'width':
       type: integer
-      defaultValue: 400
+      defaultValue: 300
       ui:
         label: i18n
         reloadIfChanged: TRUE
@@ -51,7 +51,7 @@
           group: 'video'
     'height':
       type: integer
-      defaultValue: 300
+      defaultValue: 200
       ui:
         label: i18n
         reloadIfChanged: TRUE

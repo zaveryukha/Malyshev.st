@@ -1,9 +1,11 @@
-<li>
-<!--<div class="col-sm-4 wow fadeIn" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">-->
+<div class="responsive">
+  <div class="gallery">
     <a href="{imageUri}" data-lightbox="roadtrip">
       <img src="{imageUri}">
     </a>
-    <h3>{title -> f:format.raw()}</h3>
-    <p>{subTitle -> f:format.raw()}</p>
-<!--</div>-->
-</li>
+    <div class="desc">
+      <h3>{title -> f:format.raw()}</h3>
+      <p>{subTitle -> f:format.raw()}</p>
+    </div>
+  </div>
+</div>

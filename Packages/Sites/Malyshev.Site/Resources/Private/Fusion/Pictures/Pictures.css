@@ -19,62 +19,49 @@
   margin: auto;
 }
 
-ul.cross {
-  /* Подтягиваем "хвост" */
-  margin-bottom: -45px;
-  max-width: 1355px;
-
+div.gallery {
+  border: 1px solid #ccc;
 }
-  ul.cross {
-    text-align: center;
 
-    /* Лекарство для IE6-7*/
-    //text-justify: newspaper;
-    //text-align-last: justify;
+div.gallery:hover {
+  border: 1px solid #777;
+}
 
-  }
-
-  ul.cross > div.neos-contentcollection > li {
-    /*width : 320px;
-    height: 320px;
-    margin: 10px;
-    float: left;
-    vertical-align: top;*/
-
-    width: 345px;
-    min-height: 320px;
-    border: 1px solid #000;
-    display: -moz-inline-stack;
-    display: inline-block;
-    vertical-align: top;
-    float: left;
-    margin: 5px;
-    zoom: 1;
-    *display: inline;
-    _height: 320px;
-  }
-
-li.helper {
-  word-spacing: 342px;
-  padding-left: 342px;
-  visibility: hidden;
-  display: inline;
-  width: auto;
+div.gallery img {
+  padding: 5px;
+  width: 100%;
   height: auto;
-  background: none;
-
-
-  /* Корректировка для IE6-7*/
-  //margin-left: 5px;
-
-  /* Возврат zoom в значение по умолчанию*/
-  //zoom: normal;
-
 }
 
-ul.cross > div.neos-contentcollection > li > a > img{
-  margin-top: 10px;
-  max-width: 320px;
-  max-height: 240px;
-  vertical-align: top;
+div.desc {
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
